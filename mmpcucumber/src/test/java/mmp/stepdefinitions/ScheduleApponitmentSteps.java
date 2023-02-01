@@ -1,11 +1,7 @@
 package mmp.stepdefinitions;
-
-
 import java.io.IOException;
 import java.util.HashMap;
-
-import org.testng.Assert;
-
+import org.junit.Assert;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

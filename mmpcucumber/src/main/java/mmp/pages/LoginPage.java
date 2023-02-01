@@ -14,7 +14,7 @@ public class LoginPage {
 	
 	public void login(String uname,String pword)
 	{
-		 
+		
 		driver.findElement(By.id("username")).sendKeys(uname);
 		driver.findElement(By.id("password")).sendKeys(pword);
 		driver.findElement(By.name("submit")).click();

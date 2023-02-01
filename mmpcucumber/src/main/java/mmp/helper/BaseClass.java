@@ -29,6 +29,7 @@ public class BaseClass {
 			
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
+			driver.manage().window().maximize();
 			 
 		}
 		else if(browser.equals("firefox"))
