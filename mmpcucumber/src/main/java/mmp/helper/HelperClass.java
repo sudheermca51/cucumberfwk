@@ -18,5 +18,9 @@ public class HelperClass {
 				(By.xpath("(//h3[normalize-space()='"+expected+"'])[1]")).getText();
 		return actualPName;
 	}
+	public void launchBrowser(String url)
+	{
+		driver.get(url);
+	}
 
 }

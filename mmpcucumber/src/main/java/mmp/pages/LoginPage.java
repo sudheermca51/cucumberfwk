@@ -21,6 +21,11 @@ public class LoginPage {
 		 
 		
 	}
+	public String fetchloginSuccessfulText()
+	{
+		String actual = driver.findElement(By.xpath("//h3[normalize-space()='Patient Portal']")).getText();
+		return actual;
+	}
 	 
 	
 }
