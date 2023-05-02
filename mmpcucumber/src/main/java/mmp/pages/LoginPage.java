@@ -1,5 +1,6 @@
 package mmp.pages;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -25,6 +26,13 @@ public class LoginPage {
 	{
 		String actual = driver.findElement(By.xpath("//h3[normalize-space()='Patient Portal']")).getText();
 		return actual;
+	}
+	public String handleAlert()
+	{
+		Alert alrt = driver.switchTo().alert();
+		String alertmessage = alrt.getText();
+		alrt.dismiss();
+		return alertmessage;
 	}
 	 
 	
