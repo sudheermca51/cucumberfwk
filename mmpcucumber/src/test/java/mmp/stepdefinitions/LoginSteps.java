@@ -20,6 +20,7 @@ public class LoginSteps extends BaseClass{
 		instantiateDriver();
 		helper=new HelperClass(driver);
 		helper.launchBrowser("http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/portal/login.php");
+		 
 	}
 	@When("^Users inputs the valid (.*) and (.*)$")
 	public void users_inputs_the_valid_and(String username, String password) {

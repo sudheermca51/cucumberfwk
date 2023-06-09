@@ -33,16 +33,16 @@ public class LoginBackGroundSteps extends BaseClass{
 		 
 		 
 	}
-	@When("^Users inputs the valid (.*) and (.*)$")
-	public void users_inputs_the_valid_and(String username, String password) {
-		loginPage = new LoginPage(driver);
-		loginPage.login(username, password);
-	}
-	@When("^Users inputs the invalid (.*) and (.*)$")
-	public void users_inputs_the_invalid_and(String username, String password) {
-		loginPage = new LoginPage(driver);
-		loginPage.login(username, password);
-	}
+//	@When("^Users inputs the valid (.*) and (.*)$")
+//	public void users_inputs_the_valid_and(String username, String password) {
+//		loginPage = new LoginPage(driver);
+//		loginPage.login(username, password);
+//	}
+//	@When("^Users inputs the invalid (.*) and (.*)$")
+//	public void users_inputs_the_invalid_and(String username, String password) {
+//		loginPage = new LoginPage(driver);
+//		loginPage.login(username, password);
+//	}
 	@Then("User can login mmp site successfully")
 	public void user_can_login_successfully() {
 		  String actual = loginPage.fetchloginSuccessfulText();
