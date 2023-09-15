@@ -6,10 +6,10 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "mmpfeatures/login.feature",
+@CucumberOptions(features = "mmpfeatures/Login.feature",
 				 plugin = {"pretty","html:target/cucumber-reports/cucumber.html",
 									"json:target/cucumber-reports/cucumber.json"},
-				 glue="mmp.stepdefinitions")//,tags= "@regression")
+				 glue="mmp.stepdefinitions")//,tags= "@sanity"
 public class RunCucumberTest {
 
 }
