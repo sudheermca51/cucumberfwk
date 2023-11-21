@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features = "mmpfeatures/Login.feature",
 				 plugin = {"pretty","html:target/cucumber-reports/cucumber.html",
 									"json:target/cucumber-reports/cucumber.json"},
-				 glue="mmp.stepdefinitions")//,tags= "@sanity"
+				 glue="mmp.stepdefinitions",tags= "@regression")
 public class RunCucumberTest {
 
 }
