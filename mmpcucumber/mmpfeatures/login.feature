@@ -18,3 +18,4 @@ Feature: User can login to MMP Website site
     Examples: 
       | username | password |
       | ria1     | Ria1234567 |
+      | ria1     | Ria12347 |
