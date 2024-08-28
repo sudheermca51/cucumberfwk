@@ -19,7 +19,7 @@ public class LoginSteps extends BaseClass{
 	public void user_visited_to_the_mmp_site() throws IOException {
 		instantiateDriver();
 		helper=new HelperClass(driver);
-		helper.launchBrowser("http://96.84.175.78/MMP-Release2-Integrated-Build.6.8.000/portal/login.php");
+		helper.launchBrowser(pro.getProperty("patientURL"));
 		 
 	}
 	@When("^Users inputs the valid (.*) and (.*)$")
